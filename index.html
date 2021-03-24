@@ -23,28 +23,33 @@
  </head>
 
  <body>
-   
+     
+     <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-5 text-center">Weather Dashboard</h1>
+        </div>
+     </div>
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+     <div class="main-container">
+        <div class="row">
+           <div class="col-3 search">
+              <h2>Search for a City:</h2>
+              <div class="input-city mb-3">
+                  <input type="text" class="form-control" id="cityInput" placeholder="" >
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="button" id="citySearchButton"> <img src="./02-Homework/Assets/pngtree-search-vector-icon-png-image_696422.jpg" width="20px"/></button>
+                  </div>
+              </div>
+              <div class="list-group" id="cityList">
+              </div>
+           </div>
+           <div class="column-9">
+              <div class="card" style="width: 100%;" id="weatherContain"></div>
+              <div id="forecastContain"></div>
+           </div>
+        </div>
+     </div>
+     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src= "./02-Homework/js/script.js"></script>
